@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const texts = [
   'Bentar, lagi loading... Sabar yaah :)',
-  'Oke, semuanya udah siappp ^^',
+  'Oke, semuanya udah siappp~ volume nya dinyalain yaa ^^',
   'Hey kamu!',
   'Iya kamu..',
   'Jangan sedih terus..',
