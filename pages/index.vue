@@ -48,9 +48,10 @@ const clearTimer = () => {
 }
 
 onMounted(() => {
-  audio.value = new Audio('/music.mp3')
   clearTimer()
   timeout.value = setTimeout(next, 3000)
+  audio.value = new Audio('/music.mp3')
+  audio.value.addEventListener('ended', playAudio)
 })
 
 onUnmounted(() => {
