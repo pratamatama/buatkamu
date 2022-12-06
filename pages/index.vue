@@ -67,11 +67,11 @@ const text = computed(() => texts[index.value])
 const theEnd = computed(() => index.value === texts.length - 1)
 
 const next = () => {
-  if (!theEnd.value) index.value++
   if (index.value === 1) {
     console.log('playing audio...')
     playAudio()
   }
+  if (!theEnd.value) index.value++
 }
 
 const footerText = computed(() =>
@@ -83,13 +83,14 @@ const footerText = computed(() =>
 
 <template>
   <div
-    class="container bg-pink-200 text-pink-600 text-center h-screen cursor-pointer"
+    class="bg-pink-200 text-pink-600 text-center h-screen w-screen"
+    :class="{ 'cursor-pointer': !theEnd, 'cursor-not-allowed': theEnd }"
   >
     <div
       @click="next"
       class="relative h-full flex items-center justify-center p-6"
     >
-      <div>
+      <div class="container mx-auto">
         <p class="text-3xl mb-4" v-html="text" />
       </div>
     </div>
