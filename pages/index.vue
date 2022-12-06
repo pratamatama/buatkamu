@@ -23,7 +23,7 @@ const texts = [
   'Aku bakal terus dukung kamu.',
   'Sampai tiba waktunya kamu siap buat kita diskusi bareng lagi.',
   '&#128538;',
-  'Dari aku, #buatkamu.',
+  'Dari aku, #buatkamuu.',
   'Maaf yaa kalo jelek, aku nggak bisa desain &#128514;',
 ]
 
